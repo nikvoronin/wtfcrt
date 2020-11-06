@@ -1,3 +1,5 @@
 # Through the Cathode-Ray Tube, and WTF Doing There
 
-[:tv:](nikvoronin.github.io/wtfcrt)
+[[link1]]
+
+[[link2]]
