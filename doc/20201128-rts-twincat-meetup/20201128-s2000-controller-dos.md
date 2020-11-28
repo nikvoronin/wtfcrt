@@ -1,0 +1,13 @@
+# In 1993 Beckhoff introduced the S2000 controller
+
+In 1993 Beckhoff introduced the `S2000` controller, a Microsoft-DOS-based control system that was real-time capable through pure software extensions and enabled processing of PLC, Motion and visualization on a single CPU. However, as a single-task operating system DOS can only start one program at a time. If another program is to be executed, the one currently being processed must be terminated first. TSR (Terminate Stay Resident), which was activated through interrupts, was used to enable background functions and to retain small auxiliary programs in the memory after the end of the main program. The S2000 software distinguished between three task levels: the NC task with the highest priority, followed by the PLC task and the foreground task and the user interface, which was executed in the remaining available computing time of the PC. A scheduler was used for switching between the task levels. The S2000 foreground task consisted of cooperative multitasking, which made user inputs in parallel to background functions possible, thus removing the single-task limitation of the DOS operating system. The visual display of the user interface was implemented by textual graphics with 80 x 25 characters and an ASCII character set. As an example of a background task, C++ could be used to establish communication with a database in order to obtain new machine orders or acknowledge completed orders.
+
+The application of C++ as SFC in Beckhoff controllers is not new: Even the DOS-based S2000 PC controller, developed by Beckhoff in 1993, was able to integrate C as SFC.
+
+[TwinCAT 3: C++ drives automation](http://www.pc-control.net/pdf/special_25_years_pcc/products/pcc_special_0811_twincat3_e.pdf)
+
+## S1000 and S2000 – PLC and Motion Control under DOS
+
+With the first PC-executable control software platforms, S1000 and S2000, Beckhoff had already made PLC and Motion Control functions, including CNC, available to its customers starting 1988. Thousands of machines for completely different fields were automated with the S1000 and S2000 software. The real-time capability of the PCs under the DOS operating system was made possible by a real-time extension developed by Beckhoff in-house. The programming of the actual controller took place in a programming language similar to Step-5. Even at that time it was possible to write parts of the application in C, such as the visualization, for example. 
+
+[Software breathes life into the PC-based controller](http://www.pc-control.net/pdf/special_25_years_pcc/products/pcc_special_0811_software_e.pdf)
