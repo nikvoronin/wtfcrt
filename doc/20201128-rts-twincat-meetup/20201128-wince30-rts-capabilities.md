@@ -5,3 +5,13 @@ In Windows CE, Microsoft has developed an operating system which is compatible t
 C programmers value the fact that the TwinCAT CE solution uses an open automation platform that enables C code development for other operating systems to continue to run as cyclic logical code with minimum adaptation: Neither the connections to different fieldbus systems nor the connectivity with the HMI and ERP worlds have to be implemented separately, since they are already included in the infrastructure of the TwinCAT CE system.
 
 [TwinCAT 3: C++ drives automation](http://www.pc-control.net/pdf/special_25_years_pcc/products/pcc_special_0811_twincat3_e.pdf)
+
+## Windows CE – PC Control scales itself for Embedded systems
+
+[Real-time processing – the basis for PC Control](http://www.pc-control.net/pdf/special_25_years_pcc/products/pcc_special_0811_realtime_e.pdf)
+
+Windows CE – PC Control scales itself for Embedded systems Increasingly, powerful PC systems with ever more powerful operating systems and convenient user interfaces are frequently oversized for simple automation applications. In Windows CE, Microsoft has developed an operating system which is compatible to desktop Windows and can be finely scaled in terms of size and function. Originally planned for use mainly in mobile devices, Windows CE has been real-time-capable since version 3.0 and is used increasingly in the industrial environment. Due to the relationship of Windows CE with the “large” versions of Windows, it was possible to adapt “TwinCAT CE” to “TwinCAT XP” with compatible source code. This means that all current and future TwinCAT functions are also available under Windows CE. The only restrictions are those due to the available hardware platforms.
+
+TwinCAT CE uses the native real-time capability of Windows CE, extended by a fine-granular timer (resolution < 1 ms) on Beckhoff Embedded PCs. Since TwinCAT has mapped all real-time functions on Windows CE, TwinCAT realtime applications such as software PLC and Motion Control can coexist with real-time applications of a different origin.
+
+Since version 3.0 of Windows CE, released in 2000, the operating system has been continuously developed, but always remains at least one step behind the desktop Windows. The current version of Windows CE is Windows Embedded Compact 7. It now supports SMP (symmetric multi-processing) for the first time on multiprocessor systems. TwinCAT CE 3 will also use and support this function of the operating system.
